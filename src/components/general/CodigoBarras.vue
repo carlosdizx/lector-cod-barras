@@ -1,5 +1,5 @@
 <template>
-  <svg id="barcode"></svg>
+  <svg id="barcode"/>
 </template>
 
 <script>
@@ -13,11 +13,11 @@ export default {
   },
   methods:{
     convertirString(){
-      return this.nombre+'||'+this.precioVenta
+      return (this.nombre + '||' + this.precioVenta);
     }
   },
   mounted() {
-    JsBarcode("#barcode", this.convertirString(), {
+     JsBarcode("#barcode", this.convertirString(), {
       text: this.nombre,
       background: "#FFF",
       lineColor: "#000",
