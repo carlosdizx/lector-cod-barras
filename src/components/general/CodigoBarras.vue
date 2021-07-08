@@ -1,5 +1,5 @@
 <template>
-  <svg id="barcode"/>
+  <svg :id="'barcode'+id"/>
 </template>
 
 <script>
@@ -8,6 +8,7 @@ const JsBarcode = require('jsbarcode');
 export default {
   name: "CodigoBarras",
   props:{
+    id:null,
     nombre:String,
     precioVenta:null
   },
@@ -17,7 +18,7 @@ export default {
     }
   },
   mounted() {
-     JsBarcode("#barcode", this.convertirString(), {
+     JsBarcode("#barcode"+this.id, this.convertirString(), {
       text: this.nombre,
       background: "#FFF",
       lineColor: "#000",

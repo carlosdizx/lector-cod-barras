@@ -3,9 +3,9 @@
   <v-container>
     <v-btn @click="agregarProducto">Agregar</v-btn>
     <div v-for="producto in productos" :v-key="producto.id" >
-      {{producto.nombre}}
+      {{producto.id}}
       <br>
-      <CodigoBarras :nombre="producto.nombre" :precioVenta="producto.precioVenta"/>
+      <CodigoBarras :id="producto.id" :nombre="producto.nombre" :precioVenta="producto.precioVenta"/>
     </div>
   </v-container>
   </div>
