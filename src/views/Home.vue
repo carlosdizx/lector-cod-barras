@@ -37,7 +37,7 @@
     methods:{
       ...mapActions(['agregarProducto']),
       agregar(){
-        this.agregarProducto({nombre:'lo que sea',precio:5000,codigo:Math.random() * (10000 - 1) + 1})
+        this.agregarProducto({nombre:'lo que sea',precio:5000,codigo:parseInt(Math.random() * (10 - 1) + 1)})
       }
     }
   })
