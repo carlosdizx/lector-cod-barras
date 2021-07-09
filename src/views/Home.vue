@@ -33,7 +33,6 @@
     },
     mounted() {
       this.lista = this.productos;
-      console.log(JSON.stringify(this.productos))
     },
     methods:{
       ...mapActions(['agregarProducto']),
