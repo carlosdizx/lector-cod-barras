@@ -2,7 +2,8 @@
   <div>
   <v-container>
     <div v-for="producto in productos" :v-key="producto.id" >
-      <CodigoBarras :id="producto.codigo" :nombre="producto.nombre" :precioVenta="producto.precioVenta"/>
+      {{producto}}
+      <CodigoBarras :id="producto.codigo" :nombre="producto.nombre" :precioVenta="producto.precio"/>
     </div>
   </v-container>
   </div>

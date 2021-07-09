@@ -5,11 +5,10 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    productos:[]
+    productos:Array<any>()
   },
   mutations: {
-    addProducto(state, payload:any){
-      // @ts-ignore
+    addProducto(state, payload){
       state.productos.push(payload);
     }
   },

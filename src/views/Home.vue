@@ -20,6 +20,7 @@
       Tabla
     },
     data: () => ({
+      iterable:1,
       columnas: [
         { text: 'Nombre', value: 'nombre' },
         { text: 'Precio Compra', value: 'precio' },
@@ -37,7 +38,8 @@
     methods:{
       ...mapActions(['agregarProducto']),
       agregar(){
-        this.agregarProducto({nombre:'lo que sea',precio:5000,codigo:parseInt(Math.random() * (10 - 1) + 1)})
+        this.agregarProducto({nombre:'Producto'+this.iterable,precio:parseInt(Math.random() * (10000 - 1000) + 1000),codigo:parseInt(Math.random() * (10 - 1) + 1)})
+        this.iterable += 1
       }
     }
   })
