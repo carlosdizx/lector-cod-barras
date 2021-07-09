@@ -10,6 +10,7 @@
   "dependencies": {
     "@babel/polyfill": "^7.4.4",
     "@mdi/font": "5.9.55",
+    "barcode": "^0.1.0",
     "canvas": "^2.8.0",
     "core-js": "^3.6.5",
     "jsbarcode": "^3.11.4",
